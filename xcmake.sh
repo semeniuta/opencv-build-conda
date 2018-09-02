@@ -7,7 +7,7 @@ WHERE_ENV=$CONDA_ENV_PATH/$CONDA_ENV_NAME
 echo "Starting CMake with conda environment: $WHERE_ENV"
 
 cmake \
-    -D ENABLE_CXX11=ON \
+  -D ENABLE_CXX11=ON \
 	-D CMAKE_BUILD_TYPE=RELEASE \
 	-D OPENCV_EXTRA_MODULES_PATH=../opencv_contrib/modules \
 	-D CMAKE_INSTALL_PREFIX=/usr/local \
